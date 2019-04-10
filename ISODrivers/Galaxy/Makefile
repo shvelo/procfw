@@ -7,7 +7,7 @@ OBJS += SystemCtrlForKernel.o
 
 CFLAGS = -Os -G0 -Wall -I. -I../../include -I../../Common
 
-LDFLAGS = -mno-crt0 -nostartfiles -L. -L../../libs
+LDFLAGS = -nostartfiles -L. -L../../libs
 
 ifeq ($(DEBUG), 1)
 CFLAGS += -DDEBUG=1
